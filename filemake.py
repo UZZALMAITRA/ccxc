@@ -1,15 +1,49 @@
-#coded_by_solo_hacker
-"""
-Don't Use Without
-Credits
-"""
-import itertools, threading, time, sys, os
-import rich
-import json,os,sys,random,datetime,time,re
-from concurrent.futures import ThreadPoolExecutor as speed
-from rich.markdown import Markdown as mark
-from rich import pretty
-from random import choice as pilih
+import os
+try:
+	import requests
+except ImportError:
+	print('\n [×] requests module not installed!...\n')
+	os.system('pip install requests')
+try:
+	import concurrent.futures
+except ImportError:
+	print('\n [×] Futures module not installed!...\n')
+	os.system('pip install futures')
+try:
+	import bs4
+except ImportError:
+	print('\n [×] Bs4 module not installed!...\n')
+	os.system('pip install bs4')
+import os
+import requests,bs4,json,sys,random,datetime,time,re,subprocess,platform
+from bs4 import BeautifulSoup as sop
+from concurrent.futures import ThreadPoolExecutor as tred
+import zlib
+from time import sleep
+import os,sys,time,json,random,re,string,platform,base64,platform
+try:
+	import requests
+	from concurrent.futures import ThreadPoolExecutor as ThreadPool
+	import mechanize
+	from requests.exceptions import ConnectionError
+except ModuleNotFoundError:
+	os.system('pip install mechanize requests futures==2 > /dev/null')
+from bs4 import BeautifulSoup
+R = '\x1b[1;91m' 
+G = '\x1b[1;92m' 
+Y = '\x1b[1;93m' 
+try:
+	import os,requests,json,time,re,random,sys,uuid,string,subprocess
+	from string import *
+	import bs4
+	#import dz
+	from concurrent.futures import ThreadPoolExecutor as tred
+	from bs4 import BeautifulSoup as sop
+	from bs4 import BeautifulSoup
+except ModuleNotFoundError: 
+	print('\n Installing missing modules ...')
+	os.system('pip install requests bs4 futures==2 > /dev/null')
+	os.system('python SHAHBAZ.py')
 P = '\x1b[0;97m'
 M = '\x1b[0;91m' 
 H = '\x1b[0;92m' 
